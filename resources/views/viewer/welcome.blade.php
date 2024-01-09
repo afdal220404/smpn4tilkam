@@ -57,7 +57,7 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/visi&misi.png" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href={{route('visimisi2')}}>
+                        <a class="cat-overlay text-white text-decoration-none" href={{route('visimisi.index2')}}>
                             <h4 class="text-white font-weight-medium">Visi & Misi</h4>
                             
                         </a>
@@ -124,6 +124,8 @@
 
 
   
+
+
 
 
    @endsection

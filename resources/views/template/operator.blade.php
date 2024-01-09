@@ -79,7 +79,7 @@
                 </a>
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
-                        <a href={{route('visimisi')}} class="nav-item nav-link">Visi Misi</a>
+                        <a href={{route('visimisi.index')}} class="nav-item nav-link">Visi Misi</a>
                         <a href={{route('kepsek.index')}} class="nav-item nav-link">Kepala Sekolah</a>
                         <a href={{route('guru.index')}} class="nav-item nav-link">Guru</a>
                         <a href={{route('prestasi.index')}} class="nav-item nav-link">Prestasi Sekolah</a>

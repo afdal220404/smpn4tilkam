@@ -9,7 +9,6 @@ use App\Http\Controllers\prestasicontroller;
 use App\Http\Controllers\pengumumancontroller;
 use App\Http\Controllers\albumfotocontroller;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\visicontroller;
 use App\Http\Controllers\misicontroller;
 use App\Http\Controllers\visimisicontroller;
 
@@ -40,14 +39,24 @@ Route::get('operator', function(){
     return view('operator.welcome');
 })->middleware('cekoperatorlogin');
 
-Route::get('visimisi', function(){
-    return view('operator.visimisi');
-})->name('visimisi');
+//==================================================================================
+Route::get('visimisi.index', [visimisicontroller::class, 'index'])->name('visimisi.index');
 
-Route::get('visimisi2', function(){
-    return view('viewer.visimisi');
-})->name('visimisi2');
+Route::get('visimisi.index2', [visimisicontroller::class, 'index2'])->name('visimisi.index2');
 
+Route::get('visimisi.tambahvisi', [visimisicontroller::class, 'createvisi'])->name('visimisi.tambahvisi')->middleware('cekoperatorlogin');
+Route::get('visimisi.tambahmisi', [visimisicontroller::class, 'createmisi'])->name('visimisi.tambahmisi')->middleware('cekoperatorlogin');
+Route::get('visimisi.tambahtujuan', [visimisicontroller::class, 'createtujuan'])->name('visimisi.tambahtujuan')->middleware('cekoperatorlogin');
+
+Route::post('visimisi.storevisi', [visimisicontroller::class, 'storevisi'])->name('visimisi.storevisi')->middleware('cekoperatorlogin');
+Route::post('visimisi.storemisi', [visimisicontroller::class, 'storemisi'])->name('visimisi.storemisi')->middleware('cekoperatorlogin');
+Route::post('visimisi.storetujuan', [visimisicontroller::class, 'storetujuan'])->name('visimisi.storetujuan')->middleware('cekoperatorlogin');
+
+Route::delete('visimisi.destroyvisi/{id}', [visimisicontroller::class, 'destroyvisi'])->name('visimisi.destroyvisi')->middleware('cekoperatorlogin');
+Route::delete('visimisi.destroymisi/{id}', [visimisicontroller::class, 'destroymisi'])->name('visimisi.destroymisi')->middleware('cekoperatorlogin');
+Route::delete('visimisi.destroytujuan/{id}', [visimisicontroller::class, 'destroytujuan'])->name('visimisi.destroytujuan')->middleware('cekoperatorlogin');
+
+//==================================================================================
 Route::get('tentangsekolah', function(){
     return view('operator.tentangsekolah');
 });

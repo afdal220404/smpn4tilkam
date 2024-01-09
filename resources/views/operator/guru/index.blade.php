@@ -6,8 +6,8 @@
  <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
         <div class="text-center mb-5">
-            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Teachers</h5>
-            <h1>Meet Our Teachers</h1>
+            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Guru</h5>
+            <h1>SMP Negeri 4 Tilatang Kamang</h1>
             <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href={{route('guru.tambah')}}>Tambah Data Guru</a>
         </div>
         <div class="row">

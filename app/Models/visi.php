@@ -9,4 +9,5 @@ class visi extends Model
 {
     use HasFactory;
     protected $fillable = ['visi'];
+    public $timestamps = false;
 }

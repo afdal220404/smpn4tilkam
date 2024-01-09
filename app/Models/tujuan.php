@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class misi extends Model
+class tujuan extends Model
 {
     use HasFactory;
-    protected $fillable = ['misi'];
-    public $timestamps = false;
+    protected $fillable = ['tujuan'];
 }
