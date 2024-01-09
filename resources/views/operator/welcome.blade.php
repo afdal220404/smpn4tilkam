@@ -51,7 +51,7 @@
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Subjects</h5>
-                <h1>Explore Top Subjects</h1>
+                <h1>Explore Fitur Web</h1>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
